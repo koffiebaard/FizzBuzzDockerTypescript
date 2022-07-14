@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  fizzbuzz-docker-typescript:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: fizzbuzz-docker-typescript
+    command: npm start
